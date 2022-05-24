@@ -2,7 +2,7 @@ import { request, store } from "@htfed/utils";
 import { HtToast } from "@htfed/ui";
 
 request.init({
-  baseURL: "https://localhost:4028/api",
+  baseURL: "https://localhost:4029/api/base",
   reqInterceptor: (config: any) => {
     config.headers = {
       ...config.headers,
