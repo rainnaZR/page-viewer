@@ -1,0 +1,49 @@
+{
+  "name": "page-viewer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite --host --port 1769",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rainnaZR/page-viewer.git"
+  },
+  "author": "fed",
+  "license": "ISC",
+  "dependencies": {
+    "@htfed/base-css": "^1.0.26",
+    "@htfed/ui": "^0.2.88",
+    "@htfed/utils": "^0.1.23",
+    "vue": "^3.2.33",
+    "vue-router": "^4.0.14",
+    "vxe-table": "^4.2.0",
+    "xe-utils": "^3.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@typescript-eslint/eslint-plugin": "^5.20.0",
+    "@typescript-eslint/parser": "^5.20.0",
+    "@vitejs/plugin-vue": "^2.3.1",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.7.1",
+    "husky": "^7.0.4",
+    "less": "^4.1.2",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-pages": "^0.23.0"
+  },
+  "bugs": {
+    "url": "https://github.com/rainnaZR/page-viewer/issues"
+  },
+  "homepage": "https://github.com/rainnaZR/page-viewer#readme"
+}
