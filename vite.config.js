@@ -8,7 +8,9 @@ import viteCompression from "vite-plugin-compression";
 export default defineConfig({
   plugins: [
     vue(),
-    pages(),
+    pages({
+      dirs: [{ dir: "src/views", baseRoute: "" }],
+    }),
     viteCompression({
       verbose: false,
       disable: false,

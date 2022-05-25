@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "@htfed/base-css": "^1.0.26",
-    "@htfed/ui": "^0.2.88",
+    "@htfed/ui": "^0.2.89",
     "@htfed/utils": "^0.1.23",
     "vue": "^3.2.33",
     "vue-router": "^4.0.14",
