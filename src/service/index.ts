@@ -1,7 +1,10 @@
 import request from "~/static/request";
+interface Model {
+  [key: string]: any;
+}
 
-const getPageFrameXhr = data => request.get('/page/frame', data);
+const getPageFrameDataXhr = (data: Model) => request.get('/page/frame', data);
 
 export {
-  getPageFrameXhr,
+  getPageFrameDataXhr,
 }
