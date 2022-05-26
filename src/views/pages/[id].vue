@@ -23,13 +23,23 @@ export default defineComponent({
     });
 
     /**
-     * 加载页面框架数据
+     * 页面初始数据的回调处理
+     */
+    const cbLoadPageData = (data: any) => {
+      data?.moduleList?.map((module: any) => {
+        module.data = module.moduleProps;
+      });
+      return data;
+    };
+
+    /**
+     * 加载页面初始数据
      */
     const onLoadPageData = async () => {
       const loading = $loading();
       try {
         const res = await getPageFrameDataXhr({ id: state.pageId });
-        state.pageData = res.data;
+        state.pageData = cbLoadPageData(res.data);
       } catch (e) {}
       loading.close();
     };
