@@ -6,13 +6,8 @@
 import { defineComponent, getCurrentInstance, reactive, onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { getPageFrameDataXhr } from "~/service/index";
-import HtBasePage from "@/HtBasePage/index.vue";
 
 export default defineComponent({
-  components: {
-    HtBasePage,
-  },
-
   setup() {
     const { $toast, $loading } = getCurrentInstance()?.proxy;
     const $route = useRoute();
@@ -26,9 +21,6 @@ export default defineComponent({
      * 页面初始数据的回调处理
      */
     const cbLoadPageData = (data: any) => {
-      data?.moduleList?.map((module: any) => {
-        module.data = module.moduleProps;
-      });
       return data;
     };
 
@@ -59,7 +51,7 @@ export default defineComponent({
       onInitPage();
     });
 
-    return { state, onLoadPageData, onInitPage };
+    return { state, cbLoadPageData, onLoadPageData, onInitPage };
   },
 });
 </script>
