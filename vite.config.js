@@ -21,8 +21,8 @@ export default defineConfig({
   resolve: {
     // 路径别名
     alias: {
-      "@": resolve(__dirname, "./src/components"),
-      "~": resolve(__dirname, "./src"),
+      "~": resolve(__dirname, "./src/components"),
+      "@": resolve(__dirname, "./src"),
     },
   },
   optimizeDeps: {

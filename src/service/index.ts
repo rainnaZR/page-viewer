@@ -1,4 +1,4 @@
-import request from "~/static/request";
+import request from "@/static/request";
 interface Model {
   [key: string]: any;
 }

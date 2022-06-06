@@ -5,7 +5,7 @@
 <script lang="ts">
 import { defineComponent, getCurrentInstance, reactive, onMounted } from "vue";
 import { useRoute } from "vue-router";
-import { getPageFrameDataXhr } from "~/service/index";
+import { getPageFrameDataXhr } from "@/service/index";
 
 export default defineComponent({
   setup() {
